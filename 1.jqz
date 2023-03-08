@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<hotpot-jquiz-file>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="">
+    <dc:creator>AICHA</dc:creator>
+    <dc:title>Test diagnostique</dc:title>
+  </rdf:Description>
+</rdf:RDF><version>7</version>
+
+<data>
+<title>Test diagnostique</title>
+
+<timer><seconds>1800</seconds><include-timer>1</include-timer></timer>
+
+<reading>
+<include-reading>0</include-reading>
+<reading-title></reading-title>
+<reading-text></reading-text>
+
+</reading>
+
+<questions><question-record><question>Cocher la ou les bonnes r&amp;#x00E9;ponse(s):</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>4</question-type><answers><answer><text>&amp;#x00AB; Il existe x &amp;#x2208; R, il existe y &amp;#x2208; R, x &amp;#x003C; y &amp;#x00BB; est une proposition vraie.</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>&amp;#x00AB; Pour tout x &amp;#x2208; R, pour tout y &amp;#x2208; R, x &amp;#x003C; y &amp;#x00BB; est une proposition vraie.</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>&amp;#x00AB; Pour tout x &amp;#x2208; R, il existe y &amp;#x2208; R, x &amp;#x003C; y &amp;#x00BB; est une proposition vraie.</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>&amp;#x00AB; Pour tout x &amp;#x2208; R, il existe y &amp;#x2208; R, x &amp;#x003C; y &amp;#x00BB; est &amp;#x00E9;quivalent &amp;#x00E0; &amp;#x00AB; Il existe x &amp;#x2208; R, pour tout y &amp;#x2208; R, x &amp;#x003C; y &amp;#x00BB;.</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers><must-select-all>1</must-select-all></question-record><question-record><question>Parmi les propositions suivantes quelles sont celles qui sont correctes ?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>ln(a + b) = ln(a). ln(b)</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>ln (a/b)= ln(a) &amp;#x2212; ln(b)</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>ln(ab) = ln(a). ln(b)</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>&amp;#x003C;img src=&quot;19b35628-c8f6-4dff-aa16-ec803cb0f931.jpg&quot; alt=&quot;19b35628-c8f6-4dff-aa16-ec803cb0f931.jpg&quot; title=&quot;19b35628-c8f6-4dff-aa16-ec803cb0f931&quot; width=&quot;500&quot; height=&quot;69&quot;/&amp;#x003E;</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>0</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>1</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>2</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>3</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>Pour tout entier naturel n,l&apos;un des trois entiers naturels n,n+10 et n+20 est un multiple de :</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>3</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>2</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>4</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>5</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>&amp;#x003C;img src=&quot;0.jpg&quot; alt=&quot;0.jpg&quot; title=&quot;0&quot; width=&quot;644&quot; height=&quot;118&quot;/&amp;#x003E;</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>2</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>1</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>3</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>0</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>&amp;#x003C;img src=&quot;01.jpg&quot; alt=&quot;01.jpg&quot; title=&quot;01&quot; width=&quot;628&quot; height=&quot;54&quot;/&amp;#x003E;</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>1/2</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>1/4</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>1/8</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>1/16</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>&amp;#x003C;img src=&quot;03.jpg&quot; alt=&quot;03.jpg&quot; title=&quot;03&quot; width=&quot;531&quot; height=&quot;43&quot;/&amp;#x003E;</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>Le cercle de centre I et de rayon 2</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Le cercle de centre I et de rayon 4</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>La m&amp;#x00E9;diatrice du segment [AB]</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Autre reponse</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>&quot;Bonus&quot;   1+1= </question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>0</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>1</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>2</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>3</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record></questions>
+</data>
+
+<hotpot-config-file>
+<jquiz>
+<exercise-subtitle>Quiz</exercise-subtitle>
+<instructions></instructions>
+<guess-correct>Correct!</guess-correct>
+<guess-incorrect>Sorry! Try again.</guess-incorrect>
+<partly-incorrect>Your answer is partly wrong: </partly-incorrect>
+<enter-a-guess>Please enter a guess.</enter-a-guess>
+<next-correct-letter>Next correct letter in the answer: </next-correct-letter>
+<correct-answers>Correct answers: </correct-answers>
+<show-answer-caption>Show answer</show-answer-caption>
+<include-hint>1</include-hint>
+<include-show-answer>1</include-show-answer>
+<next-ex-url>nextpage.htm</next-ex-url>
+<send-email>0</send-email>
+<continuous-scoring>0</continuous-scoring>
+<show-correct-first-time>0</show-correct-first-time>
+<shuffle-questions>0</shuffle-questions>
+<shuffle-answers>0</shuffle-answers>
+<show-limited-questions>0</show-limited-questions>
+<questions-to-show>2</questions-to-show>
+<short-answer-tries-on-hybrid-q>2</short-answer-tries-on-hybrid-q>
+<separate-javascript-file>0</separate-javascript-file>
+<case-sensitive>0</case-sensitive>
+<include-keypad>0</include-keypad>
+</jquiz>
+
+<global>
+<your-score-is>Your score is </your-score-is>
+<correct-indicator>&amp;#x2714;</correct-indicator>
+<incorrect-indicator>&amp;#x2718;</incorrect-indicator>
+<correct-first-time>Questions answered correctly first time: </correct-first-time>
+<completed-so-far>Questions completed so far: </completed-so-far>
+<exercise-completed>You have completed the exercise.</exercise-completed>
+<keypad-characters></keypad-characters>
+<times-up>Your time is over!</times-up>
+<next-ex-caption>=&amp;#x003E;</next-ex-caption>
+<back-caption>&amp;#x003C;=</back-caption>
+<contents-caption>Index</contents-caption>
+<include-next-ex>1</include-next-ex>
+<include-contents>1</include-contents>
+<include-back>0</include-back>
+<contents-url>contents.htm</contents-url>
+<graphic-url></graphic-url>
+<font-face>Geneva,Arial,sans-serif</font-face>
+<font-size>medium</font-size>
+<page-bg-color>#c0c0c0</page-bg-color>
+<title-color>#808080</title-color>
+<ex-bg-color>#ffffff</ex-bg-color>
+<text-color>#000000</text-color>
+<link-color>#000000</link-color>
+<vlink-color>#008080</vlink-color>
+<nav-bar-color>#000000</nav-bar-color>
+<formmail-url>http://yourserver.com/cgi-bin/FormMail.pl</formmail-url>
+<email>you@yourserver.com</email>
+<name-please>Please enter your name:</name-please>
+<user-string-1>one</user-string-1>
+<user-string-2>two</user-string-2>
+<user-string-3>three</user-string-3>
+<header-code></header-code>
+<correct-first-time>Questions answered correctly first time: </correct-first-time>
+<check-caption>Check</check-caption>
+<ok-caption>OK</ok-caption>
+<next-q-caption>=&amp;#x003E;</next-q-caption>
+<last-q-caption>&amp;#x003C;=</last-q-caption>
+<hint-caption>Hint</hint-caption>
+<show-all-questions-caption>Show all questions</show-all-questions-caption>
+<show-one-by-one-caption>Show questions one by one</show-one-by-one-caption>
+<show-also-correct>1</show-also-correct>
+<process-for-rtl>1</process-for-rtl>
+<include-scorm-12>0</include-scorm-12>
+</global>
+</hotpot-config-file>
+</hotpot-jquiz-file>
