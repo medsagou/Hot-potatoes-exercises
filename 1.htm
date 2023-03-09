@@ -4,12 +4,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
 <meta name="dc:creator" content="AICHA" />
-<meta name="dc:title" content="Test diagnostique" />
+<meta name="dc:title" content="Exercice 1" />
 
 
 
 <title>
-Test diagnostique
+Exercice 1
 </title>
 
 <!-- Made with executable version 7.0 Release 3 Build 0 -->
@@ -35,20 +35,20 @@ Test diagnostique
 	--strFontFace:       arial,helvetica,sans-serif;
 	--strFontSize:       small;
 	--strTextColor:      #000000;
-	--strTitleColor:     #000000;
+	--strTitleColor:     #400000;
 
-	--strFuncLightColor: #eeeeee;
-	--strFuncShadeColor: #6e6e6e;
-	--strLinkColor:      #0000ff;
-	--strVLinkColor:     #ff00ff;
+	--strFuncLightColor: #dfdfdf;
+	--strFuncShadeColor: #606060;
+	--strLinkColor:      #1d231d;
+	--strVLinkColor:     #808040;
 	
-	--strNavBarColor:    #000000;
-	--strNavLightColor:  #7f7f7f;
-	--strNavShadeColor:  #000000;
+	--strNavBarColor:    #808040;
+	--strNavLightColor:  #bfbf9f;
+	--strNavShadeColor:  #404020;
 	--strNavTextColor:   #ffffff;
 	
 	--strPageBGColor:    #ffffff;
-	--strExBGColor:      #dddddd;
+	--strExBGColor:      #c0c0c0;
 }
 
 body{
@@ -978,20 +978,20 @@ function ClearTextBoxes(){
 var CurrQNum = 0;
 var CorrectIndicator = '&#x2714;';
 var IncorrectIndicator = '&#x2718;';
-var YourScoreIs = 'Your score is ';
+var YourScoreIs = 'Votre note est de ';
 
 //New for 6.2.2.0
-var CompletedSoFar = 'Questions completed so far: ';
-var ExerciseCompleted = 'You have completed the exercise.';
+var CompletedSoFar = 'Questions compl&#x00E9;t&#x00E9;es jusqu\'&#x00E0; pr&#x00E9;sent :';
+var ExerciseCompleted = 'Vous avez termin&#x00E9; l\'exercice.';
 var ShowCompletedSoFar = true;
 
 var ContinuousScoring = false;
-var CorrectFirstTime = 'Questions answered correctly first time: ';
+var CorrectFirstTime = 'Questions r&#x00E9;pondues correctement la premi&#x00E9;re fois';
 var ShowCorrectFirstTime = false;
 var ShuffleQs = false;
 var ShuffleAs = false;
 var DefaultRight = 'Correct!';
-var DefaultWrong = 'Sorry! Try again.';
+var DefaultWrong = 'D&#x00E9;sol&#x00E9;! essayez &#x00E0; nouveau';
 var QsToShow = 8;
 var Score = 0;
 var Finished = false;
@@ -999,7 +999,7 @@ var Qs = null;
 var QArray = new Array();
 var ShowingAllQuestions = false;
 var ShowAllQuestionsCaption = 'Show all questions';
-var ShowOneByOneCaption = 'Show questions one by one';
+var ShowOneByOneCaption = 'Voir les questions une par une';
 var State = new Array();
 var Feedback = '';
 var TimeOver = false;
@@ -1773,7 +1773,7 @@ function DownTime(){
 <!-- EndTopNavButtons -->
 
 <div class="Titles">
-	<h2 class="ExerciseTitle">Test diagnostique</h2>
+	<h2 class="ExerciseTitle">Exercice 1</h2>
 
 	<h3 class="ExerciseSubtitle">Quiz</h3>
 
@@ -1812,7 +1812,7 @@ function DownTime(){
 </div>
  
 <ol class="QuizQuestions" id="Questions">
-<li class="QuizQuestion" id="Q_0" style="display: none;"><div class="QuestionText">Cocher la ou les bonnes r&#x00E9;ponse(s):</div><ol class="MSelAnswers"><li id="Q_0_0"><form method="post" onsubmit="return false;"><div><input type="checkbox" id="Q_0_0_Chk" class="MSelCheckbox" />&#x00AB; Il existe x &#x2208; R, il existe y &#x2208; R, x &lt; y &#x00BB; est une proposition vraie.</div></form></li><li id="Q_0_1"><form method="post" onsubmit="return false;"><div><input type="checkbox" id="Q_0_1_Chk" class="MSelCheckbox" />&#x00AB; Pour tout x &#x2208; R, pour tout y &#x2208; R, x &lt; y &#x00BB; est une proposition vraie.</div></form></li><li id="Q_0_2"><form method="post" onsubmit="return false;"><div><input type="checkbox" id="Q_0_2_Chk" class="MSelCheckbox" />&#x00AB; Pour tout x &#x2208; R, il existe y &#x2208; R, x &lt; y &#x00BB; est une proposition vraie.</div></form></li><li id="Q_0_3"><form method="post" onsubmit="return false;"><div><input type="checkbox" id="Q_0_3_Chk" class="MSelCheckbox" />&#x00AB; Pour tout x &#x2208; R, il existe y &#x2208; R, x &lt; y &#x00BB; est &#x00E9;quivalent &#x00E0; &#x00AB; Il existe x &#x2208; R, pour tout y &#x2208; R, x &lt; y &#x00BB;.</div></form></li></ol><button class="FuncButton" onclick="CheckMultiSelAnswer(0)">Check</button></li>
+<li class="QuizQuestion" id="Q_0" style="display: none;"><div class="QuestionText">Cocher la ou les bonnes r&#x00E9;ponse(s):</div><ol class="MSelAnswers"><li id="Q_0_0"><form method="post" onsubmit="return false;"><div><input type="checkbox" id="Q_0_0_Chk" class="MSelCheckbox" />&#x00AB; Il existe x &#x2208; R, il existe y &#x2208; R, x &lt; y &#x00BB; est une proposition vraie.</div></form></li><li id="Q_0_1"><form method="post" onsubmit="return false;"><div><input type="checkbox" id="Q_0_1_Chk" class="MSelCheckbox" />&#x00AB; Pour tout x &#x2208; R, pour tout y &#x2208; R, x &lt; y &#x00BB; est une proposition vraie.</div></form></li><li id="Q_0_2"><form method="post" onsubmit="return false;"><div><input type="checkbox" id="Q_0_2_Chk" class="MSelCheckbox" />&#x00AB; Pour tout x &#x2208; R, il existe y &#x2208; R, x &lt; y &#x00BB; est une proposition vraie.</div></form></li><li id="Q_0_3"><form method="post" onsubmit="return false;"><div><input type="checkbox" id="Q_0_3_Chk" class="MSelCheckbox" />&#x00AB; Pour tout x &#x2208; R, il existe y &#x2208; R, x &lt; y &#x00BB; est &#x00E9;quivalent &#x00E0; &#x00AB; Il existe x &#x2208; R, pour tout y &#x2208; R, x &lt; y &#x00BB;.</div></form></li></ol><button class="FuncButton" onclick="CheckMultiSelAnswer(0)">V&#x00E9;rifier</button></li>
 <li class="QuizQuestion" id="Q_1" style="display: none;"><div class="QuestionText">Parmi les propositions suivantes quelles sont celles qui sont correctes ?</div><ol class="MCAnswers"><li id="Q_1_0"><button class="FuncButton" id="Q_1_0_Btn" onclick="CheckMCAnswer(1,0,this)">?</button>&#160;&#160;ln(a + b) = ln(a). ln(b)</li><li id="Q_1_1"><button class="FuncButton" id="Q_1_1_Btn" onclick="CheckMCAnswer(1,1,this)">?</button>&#160;&#160;ln (a/b)= ln(a) &#x2212; ln(b)</li><li id="Q_1_2"><button class="FuncButton" id="Q_1_2_Btn" onclick="CheckMCAnswer(1,2,this)">?</button>&#160;&#160;ln(ab) = ln(a). ln(b)</li></ol></li>
 <li class="QuizQuestion" id="Q_2" style="display: none;"><div class="QuestionText"><img src="19b35628-c8f6-4dff-aa16-ec803cb0f931.jpg" alt="19b35628-c8f6-4dff-aa16-ec803cb0f931.jpg" title="19b35628-c8f6-4dff-aa16-ec803cb0f931" width="500" height="69"/></div><ol class="MCAnswers"><li id="Q_2_0"><button class="FuncButton" id="Q_2_0_Btn" onclick="CheckMCAnswer(2,0,this)">?</button>&#160;&#160;0</li><li id="Q_2_1"><button class="FuncButton" id="Q_2_1_Btn" onclick="CheckMCAnswer(2,1,this)">?</button>&#160;&#160;1</li><li id="Q_2_2"><button class="FuncButton" id="Q_2_2_Btn" onclick="CheckMCAnswer(2,2,this)">?</button>&#160;&#160;2</li><li id="Q_2_3"><button class="FuncButton" id="Q_2_3_Btn" onclick="CheckMCAnswer(2,3,this)">?</button>&#160;&#160;3</li></ol></li>
 <li class="QuizQuestion" id="Q_3" style="display: none;"><div class="QuestionText">Pour tout entier naturel n,l'un des trois entiers naturels n,n+10 et n+20 est un multiple de :</div><ol class="MCAnswers"><li id="Q_3_0"><button class="FuncButton" id="Q_3_0_Btn" onclick="CheckMCAnswer(3,0,this)">?</button>&#160;&#160;3</li><li id="Q_3_1"><button class="FuncButton" id="Q_3_1_Btn" onclick="CheckMCAnswer(3,1,this)">?</button>&#160;&#160;2</li><li id="Q_3_2"><button class="FuncButton" id="Q_3_2_Btn" onclick="CheckMCAnswer(3,2,this)">?</button>&#160;&#160;4</li><li id="Q_3_3"><button class="FuncButton" id="Q_3_3_Btn" onclick="CheckMCAnswer(3,3,this)">?</button>&#160;&#160;5</li></ol></li>

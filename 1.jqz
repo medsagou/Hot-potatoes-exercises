@@ -4,12 +4,12 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <rdf:Description rdf:about="">
     <dc:creator>AICHA</dc:creator>
-    <dc:title>Test diagnostique</dc:title>
+    <dc:title>Exercice 1</dc:title>
   </rdf:Description>
 </rdf:RDF><version>7</version>
 
 <data>
-<title>Test diagnostique</title>
+<title>Exercice 1</title>
 
 <timer><seconds>1800</seconds><include-timer>1</include-timer></timer>
 
@@ -28,12 +28,12 @@
 <exercise-subtitle>Quiz</exercise-subtitle>
 <instructions></instructions>
 <guess-correct>Correct!</guess-correct>
-<guess-incorrect>Sorry! Try again.</guess-incorrect>
-<partly-incorrect>Your answer is partly wrong: </partly-incorrect>
-<enter-a-guess>Please enter a guess.</enter-a-guess>
-<next-correct-letter>Next correct letter in the answer: </next-correct-letter>
-<correct-answers>Correct answers: </correct-answers>
-<show-answer-caption>Show answer</show-answer-caption>
+<guess-incorrect>D&amp;#x00E9;sol&amp;#x00E9;! essayez &amp;#x00E0; nouveau</guess-incorrect>
+<partly-incorrect>Ta r&amp;#x00E9;ponse est en partie fausse:</partly-incorrect>
+<enter-a-guess>Veuillez entrer une supposition.</enter-a-guess>
+<next-correct-letter>Lettre correcte suivante dans la r&amp;#x00E9;ponse :</next-correct-letter>
+<correct-answers>R&amp;#x00E9;ponses correctes:</correct-answers>
+<show-answer-caption>Afficher la r&amp;#x00E9;ponse</show-answer-caption>
 <include-hint>1</include-hint>
 <include-show-answer>1</include-show-answer>
 <next-ex-url>nextpage.htm</next-ex-url>
@@ -51,12 +51,12 @@
 </jquiz>
 
 <global>
-<your-score-is>Your score is </your-score-is>
+<your-score-is>Votre note est de </your-score-is>
 <correct-indicator>&amp;#x2714;</correct-indicator>
 <incorrect-indicator>&amp;#x2718;</incorrect-indicator>
-<correct-first-time>Questions answered correctly first time: </correct-first-time>
-<completed-so-far>Questions completed so far: </completed-so-far>
-<exercise-completed>You have completed the exercise.</exercise-completed>
+<correct-first-time>Questions r&amp;#x00E9;pondues correctement la premi&amp;#x00E9;re fois</correct-first-time>
+<completed-so-far>Questions compl&amp;#x00E9;t&amp;#x00E9;es jusqu&apos;&amp;#x00E0; pr&amp;#x00E9;sent :</completed-so-far>
+<exercise-completed>Vous avez termin&amp;#x00E9; l&apos;exercice.</exercise-completed>
 <keypad-characters></keypad-characters>
 <times-up>Your time is over!</times-up>
 <next-ex-caption>=&amp;#x003E;</next-ex-caption>
@@ -83,14 +83,14 @@
 <user-string-2>two</user-string-2>
 <user-string-3>three</user-string-3>
 <header-code></header-code>
-<correct-first-time>Questions answered correctly first time: </correct-first-time>
-<check-caption>Check</check-caption>
+<correct-first-time>Questions r&amp;#x00E9;pondues correctement la premi&amp;#x00E9;re fois</correct-first-time>
+<check-caption>V&amp;#x00E9;rifier</check-caption>
 <ok-caption>OK</ok-caption>
 <next-q-caption>=&amp;#x003E;</next-q-caption>
 <last-q-caption>&amp;#x003C;=</last-q-caption>
 <hint-caption>Hint</hint-caption>
 <show-all-questions-caption>Show all questions</show-all-questions-caption>
-<show-one-by-one-caption>Show questions one by one</show-one-by-one-caption>
+<show-one-by-one-caption>Voir les questions une par une</show-one-by-one-caption>
 <show-also-correct>1</show-also-correct>
 <process-for-rtl>1</process-for-rtl>
 <include-scorm-12>0</include-scorm-12>

@@ -1,0 +1,33 @@
+--function DownTime(){return} \\ with this text of code we can stop the timer
+--we can easly know the correct answer from the devtools in the script section, the correct answer will have the sign like this 
+	I[3][3][0]=new Array('3','',1,100,1);  this is the correct answer
+	I[3][3][1]=new Array('2','',0,0,1);
+	I[3][3][2]=new Array('4','',0,0,1);
+	I[3][3][3]=new Array('5','',0,0,1);
+
+--for the matching exercice you can easly know the answer from the html code, for an example we have this example:
+
+		<select onchange="JsonEx.AlignSelects(1)" id="R_1" style="display: none;">
+	<option value="-1">???</option>
+	<option value="1" data-origpos="R_1">La somme des termes consécutifs d'une suite arithmétique</option>
+	<option value="0" data-origpos="R_0" disabled="">La somme des termes consécutifs d'une suite géométrique </option>
+	<option value="2" data-origpos="R_2" disabled="">Terme général d'une suite géométrique </option>
+	</select>
+as u can see the answer is the id of the select tag.
+
+
+--For the gap-fill exercise, the answer it's a little bit hard to read because it's writen by unicode in the script tag, even though we could use any unicode text converter like "https://www.dev-gears.com/unicode-to-text", here is an example
+	I[0] = new Array();
+	I[0][1] = new Array();
+	I[0][1][0] = new Array();
+	I[0][1][0][0] = '\u0061\u0072\u0069\u0074\u0068\u006D\u00E9\u0074\u0069\u0071\u0075\u0065';
+	I[0][2]='';
+
+	I[1] = new Array();
+	I[1][1] = new Array();
+	I[1][1][0] = new Array();
+	I[1][1][0][0] = '\u0067\u00E9\u006F\u006D\u00E9\u0074\u0072\u0069\u0071\u0075\u0065';
+	I[1][2]='';
+
+
+

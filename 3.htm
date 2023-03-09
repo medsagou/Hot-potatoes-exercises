@@ -4,12 +4,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
 <meta name="dc:creator" content="AICHA" />
-<meta name="dc:title" content="Exercice 2" />
+<meta name="dc:title" content="Exercice 3" />
 
 
 
 <title>
-Exercice 2
+Exercice 3
 </title>
 
 <!-- Made with executable version 7.0 Release 3 Build 0 -->
@@ -35,20 +35,20 @@ Exercice 2
 	--strFontFace:       arial,helvetica,sans-serif;
 	--strFontSize:       small;
 	--strTextColor:      #000000;
-	--strTitleColor:     #000000;
+	--strTitleColor:     #400000;
 
-	--strFuncLightColor: #eeeeee;
-	--strFuncShadeColor: #6e6e6e;
-	--strLinkColor:      #0000ff;
-	--strVLinkColor:     #ff00ff;
+	--strFuncLightColor: #dfdfdf;
+	--strFuncShadeColor: #606060;
+	--strLinkColor:      #1d231d;
+	--strVLinkColor:     #808040;
 	
-	--strNavBarColor:    #000000;
-	--strNavLightColor:  #7f7f7f;
-	--strNavShadeColor:  #000000;
+	--strNavBarColor:    #808040;
+	--strNavLightColor:  #bfbf9f;
+	--strNavShadeColor:  #404020;
 	--strNavTextColor:   #ffffff;
 	
 	--strPageBGColor:    #ffffff;
-	--strExBGColor:      #dddddd;
+	--strExBGColor:      #c0c0c0;
 }
 
 body{
@@ -986,11 +986,11 @@ function ItemState(){
 }
 
 var Feedback = '';
-var Correct = 'Correct! Well done.';
-var Incorrect = 'Some of your answers are incorrect. Incorrect answers have been left in place for you to change.'; 
-var GiveHint = 'The next correct letter has been added to the answer.';
+var Correct = 'Correct! Bien jou&#x00E9;';
+var Incorrect = 'Certaines de vos r&#x00E9;ponses sont incorrectes. Les r&#x00E9;ponses incorrectes ont &#x00E9;t&#x00E9; laiss&#x00E9;es en place pour que vous puissiez les modifier.'; 
+var GiveHint = 'La prochaine lettre correcte a &#x00E9;t&#x00E9; ajout&#x00E9;e &#x00E0; la r&#x00E9;ponse.';
 var CaseSensitive = false;
-var YourScoreIs = 'Your score is ';
+var YourScoreIs = 'Votre note de';
 var Finished = false;
 var Locked = false;
 var Score = 0;
@@ -1038,6 +1038,8 @@ function StartUp(){
 	
 	ClearTextBoxes();
 	
+
+	StartTimer();
 
 
 }
@@ -1135,6 +1137,8 @@ function CheckAnswers(){
 	if ((AllCorrect == true)||(Finished == true)){
 	
 
+
+		window.clearInterval(Interval);
 
 		TimeOver = true;
 		Locked = true;
@@ -1309,6 +1313,53 @@ function TypeChars(Chars){
 }
 
 
+function TimesUp() {
+	document.getElementById('Timer').innerHTML = 'Your time is over!';
+
+	RefreshImages();
+
+	TimeOver = true;
+	Finished = true;
+	CheckAnswers();
+	Locked = true;
+
+}
+
+
+
+
+
+
+//CODE FOR HANDLING TIMER
+//Timer code
+var Seconds = 120;
+var Interval = null;
+
+function StartTimer(){
+	Interval = window.setInterval('DownTime()',1000);
+	document.getElementById('TimerText').style.display = 'inline';
+}
+
+function DownTime(){
+	var ss = Seconds % 60;
+	if (ss<10){
+		ss='0' + ss + '';
+	}
+
+	var mm = Math.floor(Seconds / 60);
+
+	if (document.getElementById('Timer') == null){
+		return;
+	}
+
+	document.getElementById('TimerText').innerHTML = mm + ':' + ss;
+	if (Seconds < 1){
+		window.clearInterval(Interval);
+		TimeOver = true;
+		TimesUp();
+	}
+	Seconds--;
+}
 
 
 
@@ -1350,16 +1401,18 @@ function TypeChars(Chars){
 <!-- EndTopNavButtons -->
 
 <div class="Titles">
-	<h2 class="ExerciseTitle">Exercice 2</h2>
+	<h2 class="ExerciseTitle">Exercice 3</h2>
 
-	<h3 class="ExerciseSubtitle">Gap-fill exercise</h3>
+	<h3 class="ExerciseSubtitle">Exercice pour combler les lacunes</h3>
 
+
+<div id="Timer"><span id="TimerText">&#160;&#160;</span></div>
 
 
 </div>
 
 <div id="InstructionsDiv" class="StdDiv">
-	<div id="Instructions">Fill in all the gaps, then press "Check" to check your answers. Use the "Hint" button to get a free letter if an answer is giving you trouble. You can also click on the "[?]" button to get a clue. Note that you will lose points if you ask for hints or clues!</div>
+	<div id="Instructions">Remplissez toutes les lacunes, puis appuyez sur "V&#x00E9;rifier" pour v&#x00E9;rifier vos r&#x00E9;ponses. Utilisez le bouton "Astuce" pour obtenir une lettre gratuite si une r&#x00E9;ponse vous pose probl&#x00E8;me. Vous pouvez &#x00E9;galement cliquer sur le bouton "[?]" pour obtenir un indice. Notez que vous perdrez des points si vous demandez des conseils ou des indices !<br /></div>
 </div>
 
 
@@ -1376,10 +1429,10 @@ function TypeChars(Chars){
 
 <!-- These top buttons hidden; reveal if required -->
 <!--
-<button id="CheckButton1" class="FuncButton" onclick="CheckAnswers()">&#160;Check&#160;</button>
+<button id="CheckButton1" class="FuncButton" onclick="CheckAnswers()">&#160;V&#x00E9;rifier&#160;</button>
 
 
-<button class="FuncButton" onclick="ShowHint()">&#160;Hint&#160;</button>
+<button class="FuncButton" onclick="ShowHint()">&#160;Indice&#160;</button>
 
 
  -->
@@ -1394,10 +1447,10 @@ Une suite <span class="GapSpan" id="GapSpan0"><input type="text" autocomplete="o
 
 
 
-<button id="CheckButton2" class="FuncButton" onclick="CheckAnswers()">&#160;Check&#160;</button>
+<button id="CheckButton2" class="FuncButton" onclick="CheckAnswers()">&#160;V&#x00E9;rifier&#160;</button>
 
 
-<button class="FuncButton" onclick="ShowHint()">&#160;Hint&#160;</button>
+<button class="FuncButton" onclick="ShowHint()">&#160;Indice&#160;</button>
 
 
 </div>

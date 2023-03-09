@@ -11,7 +11,7 @@
 <data>
 <title>Exercice 2 </title>
 
-<timer><seconds>60</seconds><include-timer>0</include-timer></timer>
+<timer><seconds>300</seconds><include-timer>1</include-timer></timer>
 
 <reading>
 <include-reading>0</include-reading>
@@ -21,8 +21,7 @@
 </reading>
 
 <matching-exercise>
-<default-right-item>
-</default-right-item>
+<default-right-item></default-right-item>
 
 <pair>
 <left-item><text>&amp;#x003C;img src=&quot;1.jpg&quot; alt=&quot;1.jpg&quot; title=&quot;1&quot; width=&quot;400&quot; height=&quot;68&quot; style=&quot;display: block; margin-left: auto; margin-right: auto; text-align: center;&quot;/&amp;#x003E;</text>
@@ -52,8 +51,8 @@
 
 <hotpot-config-file>
 <jmatch>
-<exercise-subtitle>Matching exercise</exercise-subtitle>
-<instructions>Match the items on the right to the items on the left.</instructions>
+<exercise-subtitle>Exercice d&apos;association</exercise-subtitle>
+<instructions>Associez les &amp;#x00E9;l&amp;#x00E8;ments de droite aux &amp;#x00E9;l&amp;#x00E8;ments de gauche</instructions>
 <next-ex-url>nextpage.htm</next-ex-url>
 <send-email>0</send-email>
 <show-limited-questions>0</show-limited-questions>
@@ -62,18 +61,18 @@
 <separate-javascript-file>0</separate-javascript-file>
 <next-caption>Next</next-caption>
 <delete-caption>Delete</delete-caption>
-<guess-correct>Correct! Well done.</guess-correct>
-<guess-incorrect>Sorry! Try again. </guess-incorrect>
+<guess-correct>Correct! bien jou&amp;#x00E9;</guess-correct>
+<guess-incorrect>D&amp;#x00E9;sol&amp;#x00E9;! Essayer &amp;#x00E0; nouveau </guess-incorrect>
 </jmatch>
 
 <global>
-<your-score-is>Your score is </your-score-is>
+<your-score-is>Votre note est de </your-score-is>
 <correct-indicator>&amp;#x2714;</correct-indicator>
 <incorrect-indicator>&amp;#x2718;</incorrect-indicator>
 <process-for-rtl>0</process-for-rtl>
 <include-scorm-12>0</include-scorm-12>
 <times-up>Your time is over!</times-up>
-<check-caption>Check</check-caption>
+<check-caption>V&amp;#x00E9;rifier</check-caption>
 <ok-caption>OK</ok-caption>
 <next-ex-caption>=&amp;#x003E;</next-ex-caption>
 <back-caption>&amp;#x003C;=</back-caption>

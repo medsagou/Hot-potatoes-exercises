@@ -35,20 +35,20 @@ Exercice 2
 	--strFontFace:       arial,helvetica,sans-serif;
 	--strFontSize:       small;
 	--strTextColor:      #000000;
-	--strTitleColor:     #000000;
+	--strTitleColor:     #400000;
 
-	--strFuncLightColor: #eeeeee;
-	--strFuncShadeColor: #6e6e6e;
-	--strLinkColor:      #0000ff;
-	--strVLinkColor:     #ff00ff;
+	--strFuncLightColor: #dfdfdf;
+	--strFuncShadeColor: #606060;
+	--strLinkColor:      #1d231d;
+	--strVLinkColor:     #808040;
 	
-	--strNavBarColor:    #000000;
-	--strNavLightColor:  #7f7f7f;
-	--strNavShadeColor:  #000000;
+	--strNavBarColor:    #808040;
+	--strNavLightColor:  #bfbf9f;
+	--strNavShadeColor:  #404020;
 	--strNavTextColor:   #ffffff;
 	
 	--strPageBGColor:    #ffffff;
-	--strExBGColor:      #dddddd;
+	--strExBGColor:      #c0c0c0;
 }
 
 body{
@@ -977,9 +977,9 @@ function ClearTextBoxes(){
 
 var CorrectIndicator = '&#x2714;';
 var IncorrectIndicator = '&#x2718;';
-var YourScoreIs = 'Your score is ';
-var CorrectResponse = 'Correct! Well done.';
-var IncorrectResponse = 'Sorry! Try again. ';
+var YourScoreIs = 'Votre note est de ';
+var CorrectResponse = 'Correct! bien jou&#x00E9;';
+var IncorrectResponse = 'D&#x00E9;sol&#x00E9;! Essayer &#x00E0; nouveau ';
 var TotalUnfixedLeftItems = 0;
 var TotCorrectChoices = 0;
 var Penalties = 0;
@@ -1112,6 +1112,8 @@ JsonEx.Setup = function(){
 		}
 	}
 
+
+	StartTimer();
 	
 
 };
@@ -1236,7 +1238,6 @@ function CheckAnswers(){
 	var Feedback = '';
 
 	var AllDone = JsonEx.CheckAnswers();
-	console.log(AllDone);
 	Score = JsonEx.Score;
 	if (Score < 0){Score = 0;}
 
@@ -1257,6 +1258,8 @@ function CheckAnswers(){
 	if ((AllDone == true)||(TimeOver == true)){
 
 
+		window.clearInterval(Interval);
+
 		TimeOver = true;
 		Locked = true;
 		Finished = true;
@@ -1267,6 +1270,52 @@ function CheckAnswers(){
 }
 
 
+function TimesUp() {
+	document.getElementById('Timer').innerHTML = 'Your time is over!';
+
+	RefreshImages();
+
+	TimeOver = true;
+	CheckAnswers();
+	Locked = true;
+
+}
+
+
+
+
+
+
+//CODE FOR HANDLING TIMER
+//Timer code
+var Seconds = 300;
+var Interval = null;
+
+function StartTimer(){
+	Interval = window.setInterval('DownTime()',1000);
+	document.getElementById('TimerText').style.display = 'inline';
+}
+
+function DownTime(){
+	var ss = Seconds % 60;
+	if (ss<10){
+		ss='0' + ss + '';
+	}
+
+	var mm = Math.floor(Seconds / 60);
+
+	if (document.getElementById('Timer') == null){
+		return;
+	}
+
+	document.getElementById('TimerText').innerHTML = mm + ':' + ss;
+	if (Seconds < 1){
+		window.clearInterval(Interval);
+		TimeOver = true;
+		TimesUp();
+	}
+	Seconds--;
+}
 
 
 
@@ -1310,14 +1359,16 @@ function CheckAnswers(){
 <div class="Titles">
 	<h2 class="ExerciseTitle">Exercice 2 </h2>
 
-	<h3 class="ExerciseSubtitle">Matching exercise</h3>
+	<h3 class="ExerciseSubtitle">Exercice d'association</h3>
 
+
+<div id="Timer"><span id="TimerText">&#160;&#160;</span></div>
 
 
 </div>
 
 <div id="InstructionsDiv" class="StdDiv">
-	<div id="Instructions">Match the items on the right to the items on the left.</div>
+	<div id="Instructions">Associez les &#x00E9;l&#x00E8;ments de droite aux &#x00E9;l&#x00E8;ments de gauche</div>
 </div>
 <div id="ContainerDiv">
 
@@ -1325,7 +1376,7 @@ function CheckAnswers(){
 
 <div class="ExerciseContainer">
 
-<button id="CheckButton1" class="FuncButton" onclick="CheckAnswers()">&#160;Check&#160;</button>
+<button id="CheckButton1" class="FuncButton" onclick="CheckAnswers()">&#160;V&#x00E9;rifier&#160;</button>
 
 <div id="MatchDiv" style="text-align: center;">
 
@@ -1370,7 +1421,7 @@ function CheckAnswers(){
 
 </div>
 
-<button id="CheckButton2" class="FuncButton" onclick="CheckAnswers()">&#160;Check&#160;</button>
+<button id="CheckButton2" class="FuncButton" onclick="CheckAnswers()">&#160;V&#x00E9;rifier&#160;</button>
 
 </div>
 
